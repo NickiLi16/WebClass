@@ -1,2 +1,2 @@
 # Web class
-## subtitle
+## subtitles
