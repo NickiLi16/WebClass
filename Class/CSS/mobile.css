@@ -1,0 +1,77 @@
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+h1
+{
+    color: red;
+    font-family: 'Bebas Neue';
+}
+
+/* this is class on the div in my HTML */
+.container
+{
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+  width: 80%;
+  box-shadow: 6px 7px 5px 2px #ededed;
+  border-radius: 20px;
+}
+/* This will affect all the h1 inside my class container */
+.container h1 {
+  font-size: 4em;
+}
+/* We added this class to my sidebar */
+.sidebar {
+  float: none;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+  width: 80%;
+  box-shadow: 6px 7px 5px 2px #ededed;
+  border-radius: 20px;
+}
+/* we use this to create a style for my navigation tag */
+.navigation {
+  display: inherit;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom:20px;
+}
+
+/* this was used in my ul tag inside my nav */
+.horizontaLine {
+  padding-top: 20px;
+  padding-inline-start:50px;
+}
+/* this will affect all the li childs inside my horizontaLine */
+.horizontaLine li {
+  display: inherit;
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+  width: 60%;
+  border-radius: 20px;
+}
+/* this will affect all the a tags nested on the li elements */
+.horizontaLine li a {
+  color: gray;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+/* This will only affect my style when the cursor is on top of my a tag */
+.horizontaLine li a:hover {
+  color: red;
+}
+
+/* This is an id */
+#dog
+{
+  width: 80%;
+  margin: auto;
+}
