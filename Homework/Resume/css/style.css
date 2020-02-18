@@ -6,6 +6,7 @@ h1
 {
     color: rgb(3,41,81);
     font-family: 'Bitter', serif;
+
 }
 /* this is class on the div in my HTML */
 .container
@@ -83,3 +84,12 @@ h1
   .list_skill{
     font-family: 'Sriracha', cursive;
   }
+  .sidebar2{
+    float: left;
+    margin-left: 60px;
+    padding: 30px;
+    background-color: rgba(71, 160, 199, 0.62);
+    box-shadow: 6px 7px 5px 2px #ededed;
+    border-radius: 20px;
+    position:  fixed;
+    }
