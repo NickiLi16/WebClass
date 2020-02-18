@@ -1,18 +1,18 @@
 body {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(255,255, 255);
 }
 
 h1
 {
-    color: red;
-    font-family: 'Bebas Neue';
+    color: rgb(3,41,81);
+    font-family: 'Bitter', serif;
 }
 /* this is class on the div in my HTML */
 .container
 {
   margin: auto;
   padding: 20px;
-  background-color: white;
+  background-color: rgb(170, 206, 238);
   width: 50%;
   box-shadow: 6px 7px 5px 2px #ededed;
   border-radius: 20px;
@@ -23,47 +23,63 @@ h1
 }
 /* We added this class to my sidebar */
 .sidebar {
-  float: left;
-  margin-left: 80px;
-  padding: 20px;
+  float: right;
+  margin-right: 30px;
+  padding: 30px;
   background-color: white;
-  width: 10%;
   box-shadow: 6px 7px 5px 2px #ededed;
   border-radius: 20px;
 }
 /* we use this to create a style for my navigation tag */
 .navigation {
-  display: table;
+  display: run-in;
   margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color:
 }
 /* this was used in my ul tag inside my nav */
 .horizontaLine {
-  padding-top: 20px;
+  padding-top: 15px;
 }
 /* this will affect all the li childs inside my horizontaLine */
 .horizontaLine li {
-  display: inline;
-  margin: 20px;
-  padding: 20px 60px 20px 60px;
+  display: inline-flex;
+  margin: 2px;
+  padding: 10px 8px 10px 8px;
   background-color: white;
-  width: 10%;
-  border-radius: 20px;
+  width: 25%;
+  border-radius: 30px;
 }
 /* this will affect all the a tags nested on the li elements */
 .horizontaLine li a {
-  color: gray;
+  color: rgb(17,64,108);
   text-decoration: none;
   font-family: sans-serif;
 }
 /* This will only affect my style when the cursor is on top of my a tag */
 .horizontaLine li a:hover {
-  color: red;
+  color: gray;
 }
-/* This is an id */
-#dog
-{
-  width: 80%;
-  margin: auto;
-}
+.table table,th,td{
+
+  	border:1px solid black;
+
+  }
+  .table th{
+    	width:30;
+    }
+  .table td{
+    	height:30px;
+    }
+  .address {
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(1,158, 213);
+    width: 50%;
+    box-shadow: 6px 7px 5px 2px #ededed;
+    border-radius: 10px;
+  }
+  .list_skill{
+    font-family: 'Sriracha', cursive;
+  }

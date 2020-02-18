@@ -8,37 +8,62 @@
     <meta name="author" content="Nicki Li">
     <meta name="description" content="Resume Nicki Li">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Sriracha&display=swap" rel="stylesheet">
+    <style>
+h2{
+  background-color: rgb(138,171,202);
+  color: rgb(3,41,81);
+}
+article{
+  font-family: 'Sriracha', cursive;
+  font-size: 20px;
+}
+aside{
+  font-size: 18px;
+  font-family: 'Sriracha', cursive;
+}
+</style>
+
   </head>
 
-  <div class="container">
+
 
   <body>
+      <div class="container">
+
+
     <header>
       <h1>Nicki Li</h1>
-      <nav>
-        <!-- This is my websites -->
-          <a href="https://www.youtube.com/channel/UCDda2hA1b31GlZCcdi744Ag?view_as=subscriber">Youtube</a> <br>
-          <a href="https://github.com/NickiLi16/WebClass">Github</a> <br>
-
-      </nav>
       <!-- This is the picture -->
-      <img src="images/selfie.jpg" alt="NickiLi" width="400">
+      <img src="images/selfie.jpg" alt="NickiLi" width="300">
 
-    </header>
+      <aside class="sidebar">
 
-    <section>
-      <aside>
-        <ul>
+          <ul>
           <li><b>School: </b>University of Miami</li>
           <li><b>City: </b>Miami, USA</li>
           <li><b>Email: </b>yxl1403@miami.edu</li>
         </ul>
+        <hr>
 
         <!-- My education experience -->
       </aside>
-    </section>
+      <nav class="navigation">
+        <ul class="horizontaLine">
+        <!-- This is my websites -->
+        <li> <a href="https://www.youtube.com/channel/UCDda2hA1b31GlZCcdi744Ag?view_as=subscriber">Youtube</a> <br></li>
+        <li>  <a href="https://github.com/NickiLi16/WebClass">Github</a> <br> </li>
+        </ul>
+
+      </nav>
+    </header>
+
+    <section>
+
     <h2>Education:</h2>
-    <table>
+    <table class="table">
       <tr>
         <th>School</th>
         <th>Years</th>
@@ -54,39 +79,40 @@
       </tr>
 <br>
     </table>
+    <hr>
     <h2>Skills:</h2>
-    <ol>
+    <ol class="list_skill">
       <li>Critical thinking</li>
       <li>Writing & Communication</li>
       <li>Relationship Building</li>
     </ol>
 <br>
-
-    <h2>introducing</h2>
-    <article>
+<hr>
+    <h2>Introducing</h2>
+    <article class="article">
 My name is <b>Nicki Li</b>. I was born in <i>Shanghai, China</i>. I'm now study
 in the <i>University of Miami</i>. I'm major in <b>motion pictures</b>.
 
 
     </article>
+  </section>
+
 <br>
 <br>
 <br>
 
 
     <!-- Address -->
-    <section>
     </div>
 
-      <address>
+      <address class="address">
         <li>Name: Nicki Li</li>
         <li>Phone Number: 3054916144</li>
         <li>E-mail: yxl1403@miami.edu</li>
         <li>Adress: 8215 SW 72nd Ave</li>
 
       </address>
-    </section>
 
 
-  </body>
+
 </html>
