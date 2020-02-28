@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Grids</title>
+    <meta name="author" content="Jose Guzman">
+    <meta name="content" content="grid templates and queries & debug#2">
+    <meta name="keywords" content="grid, queries, footer, main">
+    <link rel="stylesheet" href="css/gridStyle.css">
+  </head>
+
+  <body>
+
+    <!-- These are Grids!!! Really helpful to create different layouts and organize content -->
+
+    <section>
+      <h1>Basic Grid</h1>
+
+      <div class="basicGrid1">
+          <div> First Column</div>
+          <div> Second Column</div>
+      </div>
+
+      <div class="basicGrid2">
+          <div> first Column </div>
+          <div> Second Column</div>
+          <div> Third Column</div>
+          <div> Fourth Column</div>
+          <p>Fifth Column</p>
+          Sixth Column
+      </div>
+
+
+
+    </section>
+
+
+    <hr>
+
+        <!-- This grid is more complex than the others because it let us have our whole webpage arrenge inside one grid -->
+    <section>
+          <h1>Website Layout using Grid</h1>
+
+              <!-- The divs are boxes we can use to arrenge our content. They are very useful!!!! -->
+          <div class="gridLayout">
+                <!-- The header usually remains the same through all our webpages -->
+                <header>
+                  Header
+                </header>
+                <!-- Here is our navigation -->
+                <nav>
+                  Navigation
+                </nav>
+                <!-- We use the main tag for the main content of our website the content inside this tag will change in each webpage from our website -->
+                <main>
+                  Main
+                </main>
+                  <!-- The footer usually have our contact information it depends on what the website is about -->
+                <footer>
+                  Footer
+                </footer>
+          </div>
+    </section>
+
+
+    <hr>
+
+    <section>
+      <h1>Debug #2</h1>
+        <!-- Fix 1 bug, change the color to pink in the first link of the navigation,
+        and create a grid of 3 columns inside the main tag using the class and divs provided inside -->
+
+      <!-- You should look the bug around here   -->
+      <div class="Container">
+          <header>
+            Header
+          </header>
+      <!-- You pass it ... -->
+          <nav>
+            Navigation
+            <!-- Change the First link without adding a new class -->
+            <ul class="navUl">
+              <li> <a href="#">Link1</a> </li>
+              <li> <a href="#">Link2</a> </li>
+              <li> <a href="#">Link3</a> </li>
+            </ul>
+          </nav>
+
+          <main>
+            Main
+            <div class="gridMain">
+              <div>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum."
+               </div>
+              <div>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum."
+              </div>
+              <div>
+                <!-- Extra points if you can tell me how I center the image inside my grid column -->
+                <img src="img/bug.jpg" alt="ladyBug">
+              </div>
+            </div>
+          </main>
+
+          <footer>
+            Footer
+          </footer>
+
+      </div>
+    </section>
+
+
+
+  </body>
+</html>

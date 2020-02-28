@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Grid</title>
+    <meta name="author" content="Jose Guzman">
+    <meta name="content" content="Responsive Grid">
+    <!-- This stylesheet won't activate until the screens gets wider than 501 px -->
+    <link rel="stylesheet" media="only screen and (min-width: 501px)" href="css/desktopGrid.css">
+    <!-- This stylesheet won't activate until the screens gets smaller than 500px; -->
+    <link rel="stylesheet" media="only screen and (max-width: 500px)" href="css/mobileGrid.css">
+    <!-- The viewport meta tag won't let the browser to scale down my website -->
+    <meta name="viewport" content="initial-scale=1">
+  </head>
+  <body>
+    <!-- These are Grids!!! Really helpful to create different layouts and organize content -->
+
+    <section>
+      <h1>Basic Responsive Grid</h1>
+
+      <!-- The grid will use any element nested and treat it like a grid's cell -->
+      <div class="basicGrid">
+          <div> first Column </div>
+          <div> Second Column</div>
+          <div> Third Column</div>
+          <div> Fourth Column</div>
+          <!-- It doesn't matter if it is a div or a p or any other tag -->
+          <p>Fifth Column</p>
+      </div>
+
+
+
+    </section>
+
+    <hr>
+
+    <!-- This grid is more complex than the others because it let us have our whole webpage arrenge inside one grid -->
+<section>
+      <h1>Responsive Grid Layout</h1>
+
+          <!-- The divs are boxes we can use to arrenge our content. They are very useful!!!! -->
+      <div class="gridLayout">
+            <!-- The header usually remains the same through all our webpages -->
+            <header>
+              Header
+            </header>
+            <!-- Here is our navigation -->
+            <nav>
+              Navigation
+            </nav>
+            <!-- We use the main tag for the main content of our website the content inside this tag will change in each webpage from our website -->
+            <main>
+              Main
+            </main>
+              <!-- The footer usually have our contact information it depends on what the website is about -->
+            <footer>
+              Footer
+            </footer>
+      </div>
+</section>
+
+<hr>
+
+
+<section>
+  <h1>Debug #3</h1>
+
+
+    <!--
+      Use the two classes to create a grid within another grid.
+      Then use both mobile and desktop css files to create a responsive grid.
+      -->
+    <!-- For the class gridMain you will have to use the grid areas only in the desktop version -->
+    <!-- Use the smallGrid to create a simple grid inside the mainGrid-->
+
+
+  <div class="gridMain">
+    <header>
+      header
+    </header>
+      <nav>
+        nav
+      </nav>
+      <main>
+        <div class="smallGrid">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+        </div>
+      </main>
+
+      <footer>
+        footer
+      </footer>
+
+  </div>
+</section>
+
+
+  </body>
+</html>

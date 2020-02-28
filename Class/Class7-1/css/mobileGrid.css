@@ -1,0 +1,159 @@
+/* STYLE TO MY LAYOUT */
+h1
+{
+  font-size: 2em;
+  font-family: sans-serif;
+  color: lightgray;
+  text-align: center;
+}
+hr
+{
+width: 80%;
+}
+
+
+/* ---------------------------- BASIC GRID ----------------------------- */
+
+.basicGrid
+{
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  /* The value % will be relative to the size of the parent element,
+   if it doesn't have any parent it will take the size of the screen */
+  display: grid;
+  /* THIS DEFINES THE HEIGHT OF YOUR ROWS */
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  /* 1 fr will be relative to the width size of your row, and the amounts of columns you have */
+  grid-template-columns:1fr;
+  grid-row-gap: 20px;
+
+}
+
+
+/* This is how you get only the firs div instead of affecting all of them */
+.basicGrid div:first-child
+{
+background-color: pink;
+}
+/* the secon child div */
+.basicGrid div:nth-child(2)
+{
+  background-color: lightblue;
+}
+/* the third child div */
+.basicGrid div:nth-child(3)
+{
+  background-color: lightgreen;
+}
+/* Hope you get the idea by now.. */
+.basicGrid div:nth-child(4)
+{
+  background-color: lightgray;
+}
+
+/* ---------------------------- END BASIC GRID ----------------------------- */
+
+/* ---------------------------- RESPONSIVE GRID LAYOUT ----------------------------- */
+
+.gridLayout
+{
+  width: 100%;
+  height: 90vh;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 1650px;
+
+ /* WE START OUR GRID WITH THIS PROPERTY */
+  display: grid;
+  /* The templates areas will help us to distribute the cells from our grid in the order we want.
+  You can name it as you like of course is always good to name it in a obvious way.  */
+  grid-template-areas:  "hea hea hea"
+                        "nav nav nav"
+                        "main main main"
+                        "foo foo foo";
+
+  grid-template-rows: 20% 40% 200% 30%;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+/* Now you assign the grid areas to the elements in you HTML */
+.gridLayout header
+{
+  grid-area: hea;
+  background-color: lightblue;
+}
+.gridLayout nav
+{
+  grid-area: nav;
+  background-color: lightgreen;
+}
+.gridLayout main
+{
+  grid-area: main;
+  background-color: pink;
+}
+.gridLayout footer
+{
+  grid-area: foo;
+  background-color: lightgray;
+}
+
+/* ---------------------------- END RESPONSIVE GRID LAYOUT ----------------------------- */
+
+
+/* -------------------------------  DEBUGRESPONSIVE #3  --------------------------------- */
+
+.gridMain
+{
+  width: 100%;
+  height: 100vh;
+  /* Display the grids in a friendly mobile version */
+
+}
+
+
+.gridMain header
+{
+  background-color: lightblue;
+}
+.gridMain nav
+{
+  background-color: lightgreen;
+}
+.gridMain main
+{
+  background-color: pink;
+}
+.gridMain footer
+{
+  background-color: lightgray;
+}
+
+
+
+.smallGrid
+{
+  width: 100%;
+  height: 100%;
+
+/* Display your smaller grid with just rows */
+
+
+}
+
+/* Give a border line to all divs inside my .basicGrid1 class */
+.smallGrid div
+{
+  border: 1px solid black;
+}
+
+
+
+
+
+
+
+/* -------------------------------  END DEBUGRESPONSIVE #3  --------------------------------- */

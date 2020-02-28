@@ -1,0 +1,234 @@
+  /* STYLE TO MY LAYOUT */
+h1
+{
+    font-size: 3em;
+    font-family: sans-serif;
+    color: lightgray;
+    text-align: center;
+}
+hr
+{
+  width: 80%;
+}
+
+
+/* ---------------------------- BASIC GRID ----------------------------- */
+
+.basicGrid1
+{
+  width: 70%;
+  /* The vh value refers to the viewport height; 100vh will be the size of your browser height */
+  height: 40vh;
+  margin: auto;
+  margin-top: 50px;
+
+  /* px are an absolute unit, so they will remain the same all the time */
+  display: grid;
+  grid-template-rows: 150px;
+                      /* the height of your row */
+  grid-template-columns:150px 150px;
+                      /* the width of your columns */
+}
+
+
+/* Give a border line to all divs inside my .basicGrid1 class */
+.basicGrid1 div
+{
+  border: 1px solid black;
+}
+
+
+.basicGrid2
+{
+  width: 70%;
+  height: 40vh;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /* The value % will be relative to the size of the parent element,
+   if it doesn't have any parent it will take the size of the screen */
+  display: grid;
+  grid-template-rows: 150px 30%;
+  /* 1 fr will be relative to the width size of your row, and the amounts of columns you have */
+  grid-template-columns:1fr 1fr 1fr;
+
+}
+
+
+/* This is how you get only the firs div instead of affecting all of them */
+.basicGrid2 div:first-child
+{
+background-color: pink;
+}
+/* the secon child div */
+.basicGrid2 div:nth-child(2)
+{
+  background-color: lightblue;
+}
+/* the third child div */
+.basicGrid2 div:nth-child(3)
+{
+  background-color: lightgreen;
+}
+/* Hope you get the idea by now.. */
+.basicGrid2 div:nth-child(4)
+{
+  background-color: lightgray;
+}
+
+
+/* ---------------------------- END BASIC GRID ----------------------------- */
+
+
+
+
+/* ---------------------------- WEBSITE LAYOUT USING GRID ----------------------------- */
+
+.gridLayout
+{
+  width: 80%;
+  height: 90vh;
+  margin: auto;
+  margin-top: 150px;
+/* Here you will notice that is a more complex grid */
+  display: grid;
+  /* The templates areas will help us to distribute the cells from our grid in the order we want.
+  You can name it as you like of course is always good to name it in a obvious way.  */
+  grid-template-areas:  "hea hea  hea"
+                        "nav main main"
+                        "nav main main"
+                        "foo foo foo";
+
+  grid-template-rows: 10% 100px 20% 5em;
+  grid-template-columns: .5fr 1fr 1fr;
+
+}
+/* Now you assign the grid areas to the elements in you HTML */
+.gridLayout header
+{
+  grid-area: hea;
+  background-color: lightblue;
+}
+.gridLayout nav
+{
+  grid-area: nav;
+  background-color: lightgreen;
+}
+.gridLayout main
+{
+  grid-area: main;
+  background-color: pink;
+}
+.gridLayout footer
+{
+  grid-area: foo;
+  background-color: lightgray;
+}
+
+
+/* ---------------------------- END  WEBSITE LAYOUT USING GRID ----------------------------- */
+
+
+
+
+/* -------------------------------  DEBUGGRID#2  --------------------------------- */
+
+.container
+{
+  width: 80%;
+  height: 90vh;
+  margin: auto;
+  margin-top: 150px;
+/* Here you will notice that is a more complex grid */
+  display: grid;
+  /* The templates areas will help us to distribute the cells from our grid in the order we want.
+  You can name it as you like of course is always good to name it in a obvious way.  */
+  grid-template-areas:  "hea hea  hea"
+                        "nav main main"
+                        "nav main main"
+                        "foo foo foo";
+
+  grid-template-rows: 10% 100px 20% 5em;
+  grid-template-columns: .5fr 1fr 1fr;
+
+}
+.container header
+{
+  grid-area: hea;
+  background-color: lightblue;
+}
+.container nav
+{
+  width: 100%;
+  height: 10%;
+  background-color: lightblue;
+  grid-area: nav;
+  background-color: lightgreen;
+}
+.container main
+{
+  width: 100%;
+  height: 50%;
+  background-color: lightblue;
+}
+.container footer
+{
+  width: 100%;
+  height: 10%;
+  background-color: lightblue;
+}
+/* You can use your selectors this way if you want to apply the same properties to all this elements at the same time */
+.container footer, .container main, .container nav, .container header {
+  margin-bottom: 10px;
+}
+.navUl
+{
+
+
+}
+.navUl li
+{
+  display: inline;
+  margin: 0 8px 0 8px;
+}
+.navUl li:first-child
+{
+  background-color: lightgreen;
+}
+
+.navUl li:nth-child(2)
+{
+  background-color: lightblue;
+}
+.navUl li:nth-child(3)
+
+{
+background-color: lightgray;
+}
+
+
+.gridMain
+{
+  width: 70%;
+  /* The vh value refers to the viewport height; 100vh will be the size of your browser height */
+
+
+}
+
+/* Uncomment the css below; after you create your grid using gridMain */
+
+/* .gridMain div
+{
+background-color: pink;
+padding: 20px;
+}
+.gridMain div:nth-child(3) img
+{
+display: block;
+margin: auto;
+width: 100%;
+overflow: hidden;
+} */
+
+
+/* -------------------------------  END DEBUGGRID#2  --------------------------------- */
